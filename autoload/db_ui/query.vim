@@ -223,7 +223,7 @@ function! s:query.execute_query(...) abort
   endif
   let has_async = exists('*db#cancel')
   if has_async
-    call db_ui#notifications#info('Executing query...')
+    " call db_ui#notifications#info('Executing query...')
   endif
   if !has_async
     call s:print_query_time()
